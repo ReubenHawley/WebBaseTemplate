@@ -3,6 +3,10 @@ from pathlib import Path
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+DEBUG = True
+
+ALLOWED_HOSTS = ["127.0.0.1", "127.0.0.0"]
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
